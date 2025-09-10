@@ -1,0 +1,230 @@
+.main-header {
+  background-color: white;
+}
+
+a {
+  text-decoration: none !important;
+  color: black;
+}
+
+/*******************************************************************custom-toggle**/
+.custom-toggle {
+  position: relative;
+  height: 30px;
+  width: 28px;
+  padding: 0;
+  margin: 0 0 0 5px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.custom-toggle .icon-bar {
+  display: block;
+  width: 25px;
+  height: 2px;
+  border-radius: 0;
+  background-color: black;
+  position: absolute;
+  transition: all 0.25s ease-in-out 0s;
+  top: 15px;
+  opacity: 1;
+}
+
+.custom-toggle .icon-bar + .icon-bar {
+  margin-top: -2px;
+}
+
+@media (min-width: 1366px) {
+  #mainNavbar .custom-toggle {
+    display: none;
+  }
+}
+.custom-toggle:hover,
+.custom-toggle:focus {
+  outline: 0;
+}
+
+.custom-toggle .bar1,
+.custom-toggle .bar4 {
+  opacity: 0;
+}
+
+.custom-toggle.collapsed .bar1 {
+  opacity: 1;
+  top: 7px;
+}
+
+.custom-toggle.collapsed .bar4 {
+  opacity: 1;
+  top: 21px;
+}
+
+.custom-toggle .icon-bar.bar2 {
+  transform: rotate(45deg);
+}
+
+.custom-toggle .icon-bar.bar3 {
+  transform: rotate(-45deg);
+}
+
+.custom-toggle.collapsed .icon-bar {
+  transform: rotate(0deg);
+  transition: all 0.25s ease-in-out 0s;
+}
+
+.maid-card {
+  border-radius: 15px;
+  box-shadow: 0px 0px 6px 5px rgba(0, 0, 0, 0.06);
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.maid-card .profile {
+  margin: 15px auto 0px auto;
+  width: 100%;
+  max-width: 250px;
+}
+.maid-card .profile img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.maid-card .info-box {
+  padding: 15px 20px;
+}
+.maid-card .info-box > div {
+  margin-bottom: 10px;
+}
+
+div.pagination {
+  align-items: center;
+  justify-content: center;
+}
+div.pagination .pagination {
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+div.pagination li:not(.prev):not(.next) a,
+div.pagination li:not(.prev):not(.next) span {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  border: 1px solid #d9d9d9;
+}
+div.pagination li:not(.prev):not(.next) a:is(:hover, :focus) {
+  background-color: #f5f5f5;
+}
+div.pagination li:not(.prev):not(.next).active a {
+  background-color: #1890ff;
+  color: white;
+  border-color: #1890ff;
+}
+div.pagination .prev a,
+div.pagination .prev span,
+div.pagination .next a,
+div.pagination .next span {
+  display: inline-block;
+  border-radius: 100%;
+  border: 1px solid #d9d9d9;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+div.pagination .prev a:is(:hover, :focus),
+div.pagination .next a:is(:hover, :focus) {
+  background-color: #f5f5f5;
+}
+div.pagination .prev span,
+div.pagination .next span {
+  color: #bfbfbf;
+  border-color: #bfbfbf;
+}
+
+.banner-container {
+  width: 100%;
+  aspect-ratio: 16/9;
+  max-height: calc(100vh - 56px);
+}
+.banner-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.navbar-brand img {
+  height: 50px;
+  padding: 5px 20px;
+}
+
+.mobile-scroll {
+  padding: 0 20px;
+}
+
+.mobile-header {
+  padding: 0 20px;
+}
+
+.sectionPadding {
+  padding: 80px 0;
+}
+
+.mySwiper .swiper-slide {
+  margin: 10px;
+  height: auto !important;
+}
+
+.bootstrap-select {
+  width: 100% !important;
+}
+.bootstrap-select button {
+  background: unset;
+  border: 1px solid #e0e0e0;
+  padding: 10px 20px;
+}
+
+.form-control {
+  background: unset;
+  border: 1px solid #e0e0e0;
+  padding: 10px 20px;
+}
+
+.login-wrapper {
+  height: 100vh;
+  align-items: center;
+}
+.login-wrapper .login-card-body {
+  padding: 30px 40px;
+}
+.login-wrapper .login-card-body .card-content {
+  width: 85%;
+  margin: auto;
+}
+.login-wrapper .login-ban {
+  width: 100%;
+}
+.login-wrapper .login-ban img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.sticky-bar {
+  position: sticky;
+  top: 0;
+}
+
+header.main {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: white;
+}/*# sourceMappingURL=style.css.map */

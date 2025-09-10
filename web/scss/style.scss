@@ -1,0 +1,235 @@
+.main-header {
+  background-color: white;
+}
+a {
+  text-decoration: none !important;
+  color: black;
+}
+body {
+}
+/*******************************************************************custom-toggle**/
+.custom-toggle {
+  position: relative;
+  height: 30px;
+  width: 28px;
+  padding: 0;
+  margin: 0 0 0 5px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.custom-toggle .icon-bar {
+  display: block;
+  width: 25px;
+  height: 2px;
+  border-radius: 0;
+  background-color: black;
+  position: absolute;
+  -webkit-transition: all 0.25s ease-in-out 0s;
+  -moz-transition: all 0.25s ease-in-out 0s;
+  -o-transition: all 0.25s ease-in-out 0s;
+  transition: all 0.25s ease-in-out 0s;
+  top: 15px;
+  opacity: 1;
+}
+
+.custom-toggle .icon-bar + .icon-bar {
+  margin-top: -2px;
+}
+
+@media (min-width: 1366px) {
+  #mainNavbar .custom-toggle {
+    display: none;
+  }
+}
+.custom-toggle:hover,
+.custom-toggle:focus {
+  outline: 0;
+}
+
+.custom-toggle .bar1,
+.custom-toggle .bar4 {
+  opacity: 0;
+}
+
+.custom-toggle.collapsed .bar1 {
+  opacity: 1;
+  top: 7px;
+}
+
+.custom-toggle.collapsed .bar4 {
+  opacity: 1;
+  top: 21px;
+}
+
+.custom-toggle .icon-bar.bar2 {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.custom-toggle .icon-bar.bar3 {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.custom-toggle.collapsed .icon-bar {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: all 0.25s ease-in-out 0s;
+  -moz-transition: all 0.25s ease-in-out 0s;
+  -o-transition: all 0.25s ease-in-out 0s;
+  transition: all 0.25s ease-in-out 0s;
+}
+
+// maid-card
+
+.maid-card {
+  border-radius: 15px;
+  box-shadow: 0px 0px 6px 5px rgb(0 0 0 / 6%);
+
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  .profile {
+    margin: 15px auto 0px auto;
+    width: 100%;
+    max-width: 250px;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .info-box {
+    padding: 15px 20px;
+    > div {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+div.pagination {
+  align-items: center;
+  justify-content: center;
+  .pagination {
+    column-gap: 15px;
+  }
+  li:not(.prev):not(.next) {
+    a,
+    span {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 100%;
+      border: 1px solid #d9d9d9;
+    }
+    a:is(:hover, :focus) {
+      background-color: #f5f5f5;
+    }
+    &.active a {
+      background-color: #1890ff;
+      color: white;
+      border-color: #1890ff;
+    }
+  }
+  .prev,
+  .next {
+    a,
+    span {
+      display: inline-block;
+      border-radius: 100%;
+      border: 1px solid #d9d9d9;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+    }
+    a:is(:hover, :focus) {
+      background-color: #f5f5f5;
+    }
+    span {
+      color: #bfbfbf;
+      border-color: #bfbfbf;
+    }
+  }
+}
+.banner-container {
+  width: 100%;
+  aspect-ratio: 16/9;
+  max-height: calc(100vh - 56px);
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.navbar-brand {
+  img {
+    height: 50px;
+    padding: 5px 20px;
+  }
+}
+.mobile-scroll {
+  padding: 0 20px;
+}
+.mobile-header {
+  padding: 0 20px;
+}
+.sectionPadding {
+  padding: 80px 0;
+}
+.mySwiper {
+  .swiper-slide {
+    margin: 10px;
+    height: auto !important;
+  }
+}
+.bootstrap-select {
+  width: 100% !important;
+  button {
+    background: unset;
+    border: 1px solid #e0e0e0;
+    padding: 10px 20px;
+  }
+}
+.form-control {
+  background: unset;
+  border: 1px solid #e0e0e0;
+  padding: 10px 20px;
+}
+.login-wrapper {
+  height: 100vh;
+  align-items: center;
+  .login-card-body {
+    padding: 30px 40px;
+    .card-content {
+      width: 85%;
+      margin: auto;
+    }
+  }
+  .login-ban {
+    width: 100%;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+.sticky-bar {
+  position: sticky;
+  top: 0;
+}
+header.main {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: white;
+}

@@ -1,0 +1,285 @@
+// Color system
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&family=Noto+Sans+TC:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+// scss-docs-start gray-colors-map
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+// scss-docs-end gray-colors-map
+
+// fusv-disable
+// scss-docs-start gray-colors-map
+$grays: (
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900,
+) !default;
+// scss-docs-end gray-colors-map
+
+// scss-docs-start color-variables
+$blue: #0d6efd !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #d63384 !default;
+$red: #dc3545 !default;
+$orange: #f06621 !default;
+$yellow: #fffdf8 !default;
+$green: #198754 !default;
+$teal: #01ab6c !default;
+$cyan: #0dcaf0 !default;
+// $light: $gray-400 !default;
+$lighter: #f6f6f6 !default;
+$text-light: #999 !default;
+// // scss-docs-end color-variables
+
+// // scss-docs-start colors-map
+// $colors: (
+//   "blue": $blue,
+//   "indigo": $indigo,
+//   "purple": $purple,
+//   "pink": $pink,
+//   "red": $red,
+//   "orange": $orange,
+//   "yellow": $yellow,
+//   "green": $green,
+//   "teal": $teal,
+//   "cyan": $cyan,
+//   "black": $black,
+//   "white": $white,
+//   "gray": $gray-600,
+//   "gray-dark": $gray-800,
+//   "lighter": $lighter,
+// ) !default;
+
+// // scss-docs-start theme-color-variables
+// $primary: #98a960 !default;
+// $secondary: #f57921 !default;
+// $tertiary: #da1f32 !default;
+// $success: #6ab580 !default;
+// $info: #f60 !default;
+// $warning: #ebaf22 !default;
+// $danger: #b73030 !default;
+// $light: #f3f3f3 !default;
+// $gold: #d69f0e !default;
+// $base: #555 !default;
+// $lightBlue: #69c9b8 !default;
+// $bgorange: #fdf5ef !default;
+// $broderColor: #d1d2d3 !default;
+// // scss-docs-end theme-color-variables
+// // scss-docs-start theme-colors-map
+$darkGrey: #5f6162 !default;
+$theme-colors: (
+  "darkGrey": $darkGrey,
+) !default;
+
+$default-primary: #98a960;
+$default-secondary: #f57921;
+$default-tertiary: #da1f32;
+$default-success: #6ab580;
+$default-info: #f60;
+$default-warning: #ebaf22;
+$default-danger: #b73030;
+$default-light: #f3f3f3;
+$default-gold: #d69f0e;
+$default-base: #555;
+$default-lightBlue: #69c9b8;
+$default-bgorange: #fdf5ef;
+$default-broderColor: #d1d2d3;
+$default-ligther: #f6f6f6;
+$default-sec: #e86000;
+$default-sec-light: #f7893b;
+$default-light-text: #999;
+$default-lightBlue-dark: #28c3a7;
+$default-primary-dark: #28c3a7;
+$default-booked: #fff1f1;
+$default-bookable: #e7fadf;
+$default-period: #f5eb92;
+$default-purple-dot: #8f9ed7;
+$default-blue-dot: #5ec2bc;
+$default-light-sec: #fdf5ef;
+$default-tag-brown: #af8263;
+$default-tag-blue: #2cb5ca;
+$default-tag-green: #98a960;
+$default-tag-red: #b73030;
+$default-tag-purple: #a05daf;
+$default-tag-orange: #f57921;
+
+// Contrast mode variables
+$contrast-primary: #4f6700;
+$contrast-secondary: #ae4400;
+$contrast-sec-light: #ba5500;
+$contrast-sec-dark: #963500;
+$contrast-Tertiary: #c10619;
+$contrast-base: #000000;
+$contrast-tag-brown: #7a4f2b;
+$contrast-tag-blue: #007a99;
+$contrast-tag-green: #4f6700;
+$contrast-tag-red: #a30000;
+$contrast-tag-purple: #5a2a7a;
+$contrast-tag-orange: #ae4400;
+
+// Define CSS custom properties based on data-theme
+:root[data-theme="default"] {
+  --primary-color: #{$default-primary};
+  --secondary-color: #{$default-secondary};
+  --tertiary-color: #{$default-tertiary};
+  --success-color: #{$default-success};
+  --info-color: #{$default-info};
+  --warning-color: #{$default-warning};
+  --danger-color: #{$default-danger};
+  --light-color: #{$default-light};
+  --base-color: #{$default-base};
+  --lightBlue-color: #{$default-lightBlue};
+  --bgorange-color: #{$default-bgorange};
+  --broderColor-color: #{$default-broderColor};
+  --ligther-color: #{$default-ligther};
+  --sec-dark: #{$default-sec};
+  --sec-light: #{$default-sec-light};
+  --light-text: #{$default-light-text};
+  --lightBlue-dark: #{$default-lightBlue-dark};
+  --primary-dark: #{$default-primary-dark};
+  --booked: #{$default-booked};
+  --bookable: #{$default-bookable};
+  --period: #{$default-period};
+  --purple-dot: #{$default-purple-dot};
+  --blue-dot: #{$default-blue-dot};
+  --light-text: #{$default-light-text};
+  --light-sec: #{$default-light-sec};
+  --tag-brown: #{$default-tag-brown};
+  --tag-blue: #{$default-tag-blue};
+  --tag-green: #{$default-tag-green};
+  --tag-red: #{$default-tag-red};
+  --tag-purple: #{$default-tag-purple};
+  --tag-orange: #{$default-tag-orange};
+}
+
+// Contrast mode
+:root[data-theme="contrast"] {
+  --primary-color: #{$contrast-primary};
+  --secondary-color: #{$contrast-secondary};
+  --sec-light: #{$contrast-sec-light};
+  --sec-dark: #{$contrast-sec-dark};
+  --tertiary-color: #{$contrast-Tertiary};
+  --success-color: #{$default-success};
+  --info-color: #{$default-info};
+  --warning-color: #{$default-warning};
+  --danger-color: #{$default-danger};
+  --light-color: #{$default-light};
+  --base-color: #{$contrast-base};
+  --lightBlue-color: #{$default-lightBlue};
+  --bgorange-color: #{$default-bgorange};
+  --broderColor-color: #{$default-broderColor};
+  --ligther-color: #{$default-ligther};
+  --light-text: #{$default-light-text};
+  --lightBlue-dark: #{$default-lightBlue-dark};
+  --primary-dark: #{$default-primary-dark};
+  --booked: #{$default-booked};
+  --bookable: #{$default-bookable};
+  --period: #{$default-period};
+  --purple-dot: #{$default-purple-dot};
+  --blue-dot: #{$default-blue-dot};
+  --light-text: #{$default-light-text};
+  --light-sec: #{$default-light-sec};
+  --tag-brown: #{$contrast-tag-brown};
+  --tag-blue: #{$contrast-tag-blue};
+  --tag-green: #{$contrast-tag-green};
+  --tag-red: #{$contrast-tag-red};
+  --tag-purple: #{$contrast-tag-purple};
+  --tag-orange: #{$contrast-tag-orange};
+}
+
+// scss-docs-end theme-colors-map
+
+// Newly Added Colour
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge(
+  (
+    0: 0,
+    1: (
+      $spacer * 0.25,
+    ),
+    2: (
+      $spacer * 0.5,
+    ),
+    3: $spacer,
+    4: (
+      $spacer * 1.5,
+    ),
+    5: (
+      $spacer * 3,
+    ),
+    6: (
+      $spacer * 3.5,
+    ),
+    7: (
+      $spacer * 4,
+    ),
+    8: (
+      $spacer * 4.5,
+    ),
+    9: (
+      $spacer * 6,
+    ),
+    10: (
+      $spacer * 8,
+    ),
+    /* by pixel */ 30px:
+      (
+        $spacer * 1.875,
+      ),
+    32px: (
+      $spacer * 2,
+    ),
+    50px: (
+      $spacer * 3.125,
+    ),
+    60px: (
+      $spacer * 3.75,
+    ),
+    40px: (
+      $spacer * 2.5,
+    ),
+    80px: (
+      $spacer * 5,
+    ),
+    100px: (
+      $spacer * 6.25,
+    ),
+    119px: (
+      $spacer * 7.4375,
+    ),
+  ),
+  $spacers
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+@import "./bootstrap.scss";
